@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        
+        
+        
+     <!-- ------------------------ NAVBAR ----------------------- -->
+     
+     <nav class="nav1">
+        <div ><img src="logo.jpg" class="logo" alt=""></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+                            
+
+        </div>
+        <div class="nav2" >
+            <div class="down">
+                <div><a href="#" style="padding: 5px 15px;color: aliceblue;" class="button2 active">HOME</a></div>
+                <div><a href="#" style="padding: 5px 15px;color: aliceblue;"  class="button2">Projects</a></div>
+                <div><a href="#" style="padding: 5px 15px;color: aliceblue;"  class="button2">ABOUT</a></div>
+                <div><a href="#" style="padding: 5px 15px;color: aliceblue;"  class="button2">Contact Us</a></div>
+            </div>
+        </div>
+        <div class="contact">
+            <button class="button2" style="padding: 5px 15px;color: aliceblue;" >
+                Lets Chat
+            </button>
+        </div>
+
+    </nav>
+
+    <!-------------------------------------MAIN CONTENT ------------------>
+
+    
+
+
+    <div class="container">
+
+       <div class="anime">
+            <div class="main1">
+                <div class="main11">
+                    <div class="main12">
+                            <h1>HI! I AM <br>
+                            Bandi Hemanth</h1>
+                            <p>Web Developer | YouTuber | Professional Video Editor | 3D Video Editor | Enjoy learning new stuff on computers. Try to be self-reliant about everything.</p>
+                            <div class="button1">
+                                
+                                <button class="button2" >HIRE ME</button>
+                                <button class="button2" >Projects</button>
+                                
+                            </div>
+                    </div>
+                    <div class="main13">
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main2">
+                    <img src="pic.jpg" alt="">
+                            
+                </div>
+            </div>
+       </div>
+
+        
+   
+
+    </div>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navbar = document.querySelector(".nav2");
+            navbar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

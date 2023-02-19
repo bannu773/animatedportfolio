@@ -1,0 +1,433 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+   
+    background-image: linear-gradient(to right top, #7b10f5, #7b10f5, #004d9d, #0f0569, #0f0569);    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+    
+    
+}
+
+
+/* ------------------------ Contianer ------------------ */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+
+  /* -----------------------navbar -------------------- */
+
+  .nav1{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 1% 5% 1% 5%;
+    align-items: center;
+    z-index: 3;
+    
+  }
+
+  .nav1 .hamburger{
+    color: white;
+  }
+
+  .nav2 .down{
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .nav2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    margin: 0px 10px 0px 10px;
+    text-transform: uppercase;
+  }
+
+  .nav2 a.active{
+
+  }
+
+  .nav .down .button2{
+    padding: 9px 15px !important;
+  }
+
+  .lets{
+    padding: 5%;
+  }
+  .logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+        /*----------------------- Button Style ---------------- */
+
+.btn1 {
+    padding: 9px 15px;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: blueviolet;
+    border-radius: .5rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+        border-left, 
+        border-bottom,
+        border-right,
+        box-shadow;
+    }
+    
+    .btn1:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+    }
+
+
+    /* ----------------- hover effect --------------- */
+
+    .btn2 {
+        position: relative;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px 10px; 
+        display: inline-block;
+        border-radius: 6em;
+        transition: all .2s;
+        border: none;
+        font-family: inherit;
+        font-weight: 500;
+        color: black;
+        background-color: white;
+       }
+       
+       .btn2:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+       }
+       
+       .btn2:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+       }
+       
+       .btn2::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+       }
+       
+       .btn2::after {
+        background-color: #fff;
+       }
+       
+       .btn2:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+       }
+
+
+/* ---------------- responsiveness ------------------ */
+
+.hamburger{
+    display: none;
+}
+
+@media only screen and (max-width : 900px)
+{
+    .hamburger{
+        display: block;
+        margin-left: 10%;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 9px;
+
+    }
+    
+    .nav2
+    {
+        height: 0px;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgba(29, 8, 58, 0.493);
+        transition: .5s ease-in-out;
+        overflow: hidden;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .nav2 .down{
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+
+        
+    }
+
+    .nav2 .down a{
+        margin-top: 20px;
+    }
+
+    .nav2.active{
+        height: 250px;
+
+    }
+    .nav2.active .down{
+        opacity: 1;
+    }
+    .nav2 .button2,.nav1 .contact{
+        padding:10px 15px;
+    }
+}
+
+/* ---------------------- MAIN ----------------- */
+
+.main1, .main12{
+    background-color: #09206d00;
+    color: white;
+
+}
+
+.main1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main12{
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+
+}
+
+
+.main12 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0vh;
+}
+
+.main12 p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10%;
+}
+
+.main12 button{
+    margin-top: 10%;
+}
+
+.main2{
+    width: 50%;
+    height: 50%;
+   
+}
+.main2 img{
+    width: 270px;
+    height: 350px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.main11{
+    margin-top: 100px;
+}
+
+.main12 .button2{
+    padding: 9px 15px;
+}
+
+   .button2 {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #eeeeee;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #7c67be;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #fbfaff;
+  }
+  
+  .button2:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  .button2:active {
+    transform: scale(0.9);
+  }
+   
+ 
+
+  .anime {
+	position: relative;
+    margin-top: 9vh;
+    padding: 5%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 40px;
+    border: 1px solid white;
+}
+
+.anime:before, .anime:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #551fd1, #0f0569, #590bd6,#7b10f5, #0f0569, #7b10f5, 
+    #0f0569, #7b10f5,#7b10f5, #055c72);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 30s linear infinite;
+  border-radius: 20px;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.anime:after {
+	filter: blur(50px);
+}
+
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-icons li {
+    margin: 30px 20px;
+}
+
+.social-icons li a {
+    border: 3px solid rgb(248, 248, 248);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    border-right: none;
+    border-top: none;
+    transition: 0.3s ease;
+}
+
+.social-icons li a:hover {
+    border-top: 3px solid;
+    border-right: 3px solid;
+    transform: rotate(10deg);
+    background-color: rgb(132, 0, 255);
+    border-color: white;
+}
+
+@media only screen and (max-width : 900px)
+{
+    .main1{
+      display: flex;
+    
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    .hamburger .line{
+      color: white;
+    }
+
+    .main2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .anime{
+      border-radius: 20px;
+    }
+
+}
